@@ -20,9 +20,7 @@ public class ClientDAOImpl implements ClientDAO{
     private SessionFactory sessionFactory;
 
     @Override
-
     public List<Client> getAllClients() {
-
         Session session = sessionFactory.getCurrentSession();
 
 //        List<Client> allClients = session.createQuery("from Client"
@@ -32,5 +30,11 @@ public class ClientDAOImpl implements ClientDAO{
                 , Client.class);
         List <Client> allClients = query.getResultList();
         return allClients;
+    }
+
+    @Override
+    public void saveClient(Client client) {
+        Session session = sessionFactory.getCurrentSession();
+        session.save(client);
     }
 }

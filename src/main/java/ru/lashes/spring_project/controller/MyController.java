@@ -36,6 +36,8 @@ public class MyController {
     @RequestMapping("/saveClient")
     public String saveClient(@ModelAttribute("client") Client client) {
 
+        clientService.saveClient(client);
+
         return "redirect:/";
     }
 }

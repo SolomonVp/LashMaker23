@@ -11,6 +11,7 @@ import java.util.List;
 @Service
 public class ClientServiceImpl implements ClientService {
 
+
     @Autowired
     private ClientDAO clientDAO;
 
@@ -18,5 +19,11 @@ public class ClientServiceImpl implements ClientService {
     @Transactional
     public List<Client> getAllClients() {
         return clientDAO.getAllClients();
+    }
+
+    @Override
+    @Transactional
+    public void saveClient(Client client) {
+        clientDAO.saveClient(client);
     }
 }
