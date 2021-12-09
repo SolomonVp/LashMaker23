@@ -7,7 +7,7 @@
 <br>
 
 <table>
-    <tr>
+    <tr style="color: yellowgreen">
         <th>Name</th>
         <th>Family</th>
         <th>Lash-size</th>
@@ -17,7 +17,7 @@
     <c:forEach var="clnt" items="${allClnts}">
 
         <tr>
-            <td>${clnt.name}</td>
+            <td style="color: red">${clnt.name}</td>
             <td>${clnt.surname}</td>
             <td>${clnt.size}</td>
             <td>${clnt.price}</td>
