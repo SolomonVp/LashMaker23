@@ -6,7 +6,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.lashes.spring_project.dao.ClientDAO;
 import ru.lashes.spring_project.entity.Client;
-import ru.lashes.spring_project.service.ClientService;
 
 import java.util.List;
 
@@ -14,11 +13,11 @@ import java.util.List;
 public class MyController {
 
     @Autowired
-    private ClientService clientService;
+    private ClientDAO clientDAO;
 
     @RequestMapping("/")
     public String showAllClients(Model model) {
-        List<Client> allClients = clientService.getAllClients();
+        List<Client> allClients = clientDAO.getAllClients();
         model.addAttribute("allClnts", allClients);
         return "all-clients";
     }
