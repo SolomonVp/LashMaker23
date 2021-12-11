@@ -3,7 +3,7 @@ package ru.lashes.spring_project.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "lashes")
+@Table(name = "lashes2")
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,15 +17,18 @@ public class Client {
     private String size;
     @Column(name = "price")
     private int price;
+    @Column(name = "phoneNumber")
+    private long phoneNumber;
 
     public Client() {
     }
 
-    public Client(String name, String surname, String size, int price) {
+    public Client(String name, String surname, String size, int price, long phoneNumber) {
         this.name = name;
         this.surname = surname;
         this.size = size;
         this.price = price;
+        this.phoneNumber = phoneNumber;
     }
 
     public int getId() {
@@ -57,5 +60,11 @@ public class Client {
     }
     public void setPrice(int price) {
         this.price = price;
+    }
+    public long getPhoneNumber() {
+        return phoneNumber;
+    }
+    public void setPhoneNumber(long phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

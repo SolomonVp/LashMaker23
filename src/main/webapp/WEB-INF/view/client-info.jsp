@@ -9,13 +9,15 @@
 
     <form:hidden path="id"/>
 
-    Name    <form:input path="name"/>
+    Name          <form:input path="name"/>
     <br><br>
-    Surname <form:input path="surname"/>
+    Surname       <form:input path="surname"/>
     <br><br>
-    Size    <form:input path="size"/>
+    Size          <form:input path="size"/>
     <br><br>
-    Price   <form:input path="price"/>
+    Price         <form:input path="price"/>
+    <br><br>
+    PhoneNumber   <form:input path="phoneNumber"/>
     <br><br>
 
     <input type="submit", value="OK">

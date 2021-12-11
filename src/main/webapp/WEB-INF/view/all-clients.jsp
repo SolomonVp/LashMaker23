@@ -12,6 +12,7 @@
         <th>Family</th>
         <th>Lash-size</th>
         <th>Price</th>
+        <th>Phone number</th>
         <th>Operations</th>
     </tr>
 
@@ -31,6 +32,7 @@
             <td style="color: lightseagreen">${clnt.surname}</td>
             <td style="color: mediumblue">${clnt.size}</td>
             <td style="color: chocolate">${clnt.price}</td>
+            <td style="color: brown">${clnt.phoneNumber}</td>
 
             <td>
                 <input type="button" value="Update" style="color: rebeccapurple"
@@ -47,7 +49,7 @@
 
 <br>
 
-<input type="button" value="Add new beautiful girl"
+<input type="button" value="Add new cutie"
     onclick="window.location.href = 'addNewGirl'"/>
 
 </body>
