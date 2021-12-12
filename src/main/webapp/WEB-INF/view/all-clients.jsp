@@ -8,12 +8,12 @@
 
 <table>
     <tr>
-        <th>Name</th>
-        <th>Family</th>
-        <th>Lash-size</th>
-        <th>Price</th>
-        <th>Phone number</th>
-        <th>Operations</th>
+        <th>Name           </th>
+        <th>Family         </th>
+        <th>Lash-size      </th>
+        <th>Price          </th>
+        <th>Phone number   </th>
+        <th>Operations     </th>
     </tr>
 
     <c:forEach var="clnt" items="${allClnts}">
