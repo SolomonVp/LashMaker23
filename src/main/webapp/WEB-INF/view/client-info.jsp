@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2>Client Info</h2>
+<h2>Clients Info</h2>
 <br>
 
 <form:form action="saveClient" modelAttribute="client">

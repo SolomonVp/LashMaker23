@@ -3,7 +3,7 @@
 <html>
 <body>
 
-<h2>All your clients!</h2>
+<h2>All clients:</h2>
 <br>
 
 <table>
