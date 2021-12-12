@@ -7,7 +7,7 @@
 <br>
 
 <table>
-    <tr style="color: yellowgreen">
+    <tr>
         <th>Name</th>
         <th>Family</th>
         <th>Lash-size</th>
@@ -28,17 +28,17 @@
 
         <tr>
 
-            <td style="color: red">${clnt.name}</td>
-            <td style="color: lightseagreen">${clnt.surname}</td>
-            <td style="color: mediumblue">${clnt.size}</td>
-            <td style="color: chocolate">${clnt.price}</td>
-            <td style="color: brown">${clnt.phoneNumber}</td>
+            <td>${clnt.name}</td>
+            <td>${clnt.surname}</td>
+            <td>${clnt.size}</td>
+            <td>${clnt.price}</td>
+            <td>${clnt.phoneNumber}</td>
 
             <td>
-                <input type="button" value="Update" style="color: rebeccapurple"
+                <input type="button" value="Update"
                 onclick="window.location.href = '${updateButton}'"/>
 
-                <input type="button" value="Delete" style="color: rebeccapurple"
+                <input type="button" value="Delete"
                        onclick="window.location.href = '${deleteButton}'"/>
             </td>
 

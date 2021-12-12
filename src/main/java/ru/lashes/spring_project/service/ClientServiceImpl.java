@@ -14,6 +14,7 @@ public class ClientServiceImpl implements ClientService {
     @Autowired
     private ClientDAO clientDAO;
 
+
     @Override
     @Transactional
     public List<Client> getAllClients() {
